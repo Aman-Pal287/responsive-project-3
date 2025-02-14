@@ -32,5 +32,14 @@ main {
 }
 .view-1 .bottom {
   display: grid;
-  grid-template-areas: " . . . . " " . . . . " " . . . . " " . . . . " " . . . . " " . . . . " " . . . . " " . . . . ";
+  grid-template-areas: " a a b b " " a a b b " " a a b b " " a a b b " " a a b b " " a a c c " " a a c c " " a a c c ";
+}
+.view-1 .bottom .img-a {
+  grid-area: a;
+}
+.view-1 .bottom .img-b {
+  grid-area: b;
+}
+.view-1 .bottom .img-c {
+  grid-area: c;
 }/*# sourceMappingURL=style.css.map */

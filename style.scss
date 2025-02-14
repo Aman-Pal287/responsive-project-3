@@ -35,14 +35,24 @@ main {
   .bottom {
     display: grid;
     grid-template-areas: 
-       " . . . . "
-       " . . . . "
-       " . . . . "
-       " . . . . "
-       " . . . . "
-       " . . . . "
-       " . . . . "
-       " . . . . "
+       " a a b b "
+       " a a b b "
+       " a a b b "
+       " a a b b "
+       " a a b b "
+       " a a c c "
+       " a a c c "
+       " a a c c "
     ;
+
+    .img-a{
+        grid-area: a;
+    }
+    .img-b{
+        grid-area: b;        
+    }
+    .img-c{
+        grid-area: c;
+    }
   }
 }

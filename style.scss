@@ -36,37 +36,53 @@ main {
   }
 
   .bottom {
+
     width: 100%;
     aspect-ratio: 1/1;
-    .images {
-      width: 100%;
-      height: 100%;
-      gap: 1rem;
-      display: grid;
-      grid-template-areas:
-        " a a b b "
-        " a a b b "
-        " a a b b "
-        " a a b b "
-        " a a b b "
-        " a a c c "
-        " a a c c "
-        " a a c c ";
 
-      img {
+    .images {
         width: 100%;
         height: 100%;
-      }
+        display: grid;
+        grid-template-areas:
+            "a a b b"
+            "a a b b"
+            "a a b b"
+            "a a b b"
+            "a a b b"
+            "a a c c"
+            "a a c c"
+            "a a c c"
+        ;
+        gap: 2rem;
 
-      .img-a {
-        grid-area: a;
-      }
-      .img-b {
-        grid-area: b;
-      }
-      .img-c {
-        grid-area: c;
-      }
+
+        img{
+            border-radius: 2rem;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        div{
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .img-a {
+            grid-area: a;
+        }
+
+        .img-b {
+            grid-area: b;
+            max-height: 20rem;
+        }
+
+        .img-c {
+            grid-area: c;
+            max-height: 10rem;
+        }
     }
-  }
+
+}
 }
